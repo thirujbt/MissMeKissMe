@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp" >
+
+        <ImageView
+            android:id="@+id/floating_grid_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginStart="1dp"
+            android:contentDescription="@string/empty_string"
+            android:src="@drawable/default_image" />
+
+        <TextView
+            android:id="@+id/floating_grid_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:layout_marginStart="@dimen/fifteen"
+            android:layout_toEndOf="@+id/floating_grid_image"
+            android:layout_toRightOf="@+id/floating_grid_image"
+            android:text="Name"
+            android:textColor="@color/button_bg" />
+
+        <TextView
+            android:id="@+id/floating_grid_txtname_attached"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/floating_grid_txt"
+            android:layout_marginLeft="@dimen/thirteen_sp"
+            android:layout_marginStart="@dimen/thirteen_sp"
+            android:layout_toEndOf="@+id/floating_grid_image"
+            android:layout_toRightOf="@+id/floating_grid_image"
+            android:text="Name" />
+    </RelativeLayout>
+
+</RelativeLayout>

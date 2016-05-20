@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/blindfirst_newkiss_header"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/black"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/blindfirst_back_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:clickable="true"
+            android:contentDescription="@string/empty_string"
+            android:src="@drawable/back_icon" />
+
+        <TextView
+            android:id="@+id/newKiss_txt_blind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/blind_kiss"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/blind_newkiss_header1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/blindfirst_newkiss_header"
+        android:background="@color/button_bg"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/blind_kiss_searchimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/eighteen_sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/blind_newkiss_header1"
+        android:background="@drawable/bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/relative_ploter_blinddd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp" >
+
+            <ImageView
+                android:id="@+id/blindfirst_image_blind"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/five"
+                android:contentDescription="@string/empty_string" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/relative_text_blindddd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/blindfirst_nametxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/button_bg"
+                android:textSize="@dimen/eighteen_sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_send_blindsss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp" >
+
+            <Button
+                android:id="@+id/blindfirst_send_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/five"
+                android:background="@drawable/send_kiss"
+                android:text="@string/send_kiss"
+                android:textColor="@color/red" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

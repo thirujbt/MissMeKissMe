@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#95000000"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/alert_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/forget_text"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alert_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp" >
+
+            <TextView
+                android:id="@+id/alert_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/forget_text"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/alert_edit_txt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/textbox"
+                android:drawableLeft="@drawable/email_icon"
+                android:drawablePadding="@dimen/fifteen"
+                android:drawableStart="@drawable/email_icon"
+                android:ems="12"
+                android:hint="@string/forget_email_hint"
+                android:inputType="textEmailAddress"
+                android:maxLength="40"
+                android:padding="@dimen/ten"
+                android:textSize="@dimen/fifteen_sp" />
+
+            <EditText
+                android:id="@+id/alert_edit_addres_txt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/textbox"
+                android:drawablePadding="@dimen/fifteen"
+                android:ems="12"
+                android:hint="Enter address"
+                android:inputType="text"
+                android:maxLength="40"
+                android:padding="@dimen/ten"
+                android:textSize="@dimen/fifteen_sp"
+                android:visibility="gone" />
+            
+             <EditText
+                android:id="@+id/alert_edit_vault_code"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/textbox"
+                android:drawablePadding="@dimen/fifteen"
+                android:ems="12"
+                android:hint="Enter address"
+                android:inputType="text"
+                android:maxLength="4"
+                android:padding="@dimen/ten"
+                android:textSize="@dimen/fifteen_sp"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="0.25dp"
+                android:layout_below="@+id/alert_edit_txt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="@dimen/fifteen"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginRight="@dimen/fifteen"
+                android:layout_marginStart="@dimen/fifteen"
+                android:background="@drawable/underline" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="wrap_content"
+                android:layout_height="0.25dp"
+                android:layout_below="@+id/alert_edit_addres_txt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="@dimen/fifteen"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginRight="@dimen/fifteen"
+                android:layout_marginStart="@dimen/fifteen"
+                android:background="@drawable/underline"
+                android:visibility="gone" />
+            <View
+                android:id="@+id/view2"
+                android:layout_width="wrap_content"
+                android:layout_height="0.25dp"
+                android:layout_below="@+id/alert_edit_vault_code"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="@dimen/fifteen"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginRight="@dimen/fifteen"
+                android:layout_marginStart="@dimen/fifteen"
+                android:background="@drawable/underline"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/alert_password_rr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:layout_marginTop="40dp" >
+
+            <Button
+                android:id="@+id/alert_cancel_btn"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/dialog_button"
+                android:text="@string/dialog_cancel"
+                android:textColor="@color/white" />
+
+            
+             <Button
+                android:id="@+id/alert_ok_btns"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/dialog_button"
+                android:text="@string/dialog_send"
+                android:visibility="gone"
+                android:textColor="@color/white" />
+            
+            <Button
+                android:id="@+id/alert_ok_btn"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/dialog_button"
+                android:text="@string/dialog_send"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

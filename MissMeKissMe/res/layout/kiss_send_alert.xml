@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#95000000"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:layout_width="290dp"
+        android:layout_height="280dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="top"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/circle_layout" >
+
+        <LinearLayout
+            android:id="@+id/llresult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/realtime_final"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/empty_string"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/your"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="@string/your"
+                android:textColor="@color/button_bg"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/sucess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="@string/succes"
+                android:textColor="@color/button_bg"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/Track_ok_btn"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/dialog_button"
+                android:padding="5dp"
+                android:text="@string/track"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/go_home_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="20dp"
+            android:layout_alignParentBottom="true"
+            android:text="@string/go_homee"
+            android:textColor="@color/button_bg"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

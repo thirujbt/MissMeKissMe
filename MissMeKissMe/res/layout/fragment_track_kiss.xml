@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/track_newkiss_header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/black"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/track_back_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:clickable="true"
+            android:contentDescription="@string/empty_string"
+            android:src="@drawable/back_icon" />
+
+        <TextView
+            android:id="@+id/newKiss_txt_track"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/track_kiss"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/track_newkiss_header1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/track_newkiss_header"
+        android:background="@color/button_bg"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/track_kiss_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:contentDescription="@string/empty_string"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/trackKiss_txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/track_kiss_image"
+            android:text="@string/empty_string"
+            android:textColor="@color/white"
+            android:textSize="@dimen/eighteen_sp" />
+
+        <ImageView
+            android:id="@+id/fb_share_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/empty_string"
+            android:src="@drawable/fbshare" />
+
+        <!-- <com.facebook.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp" /> -->
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/track_newkiss_header1" >
+
+        <RelativeLayout
+            android:id="@+id/relative_ploter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/plotter" >
+
+            <ImageView
+                android:id="@+id/ploter_user_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="@dimen/two"
+                android:contentDescription="@string/empty_string" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_ploter_own"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/plotter" >
+
+            <ImageView
+                android:id="@+id/ploter_user_imag_own"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="@dimen/two"
+                android:contentDescription="@string/empty_string" />
+        </RelativeLayout>
+
+        <fragment
+            android:id="@+id/map_track_page"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/map_newkiss_header1"
+            android:layout_width="255dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start|top"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/notify_kiss_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:contentDescription="@string/empty_string"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/realnewKiss_txt_notifymiles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="Traveled"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ten_sp" />
+
+            <TextView
+                android:id="@+id/tracking_miles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/five"
+                android:layout_marginStart="@dimen/five"
+                android:textColor="@color/button_bg"
+                android:textSize="@dimen/fifteen_sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/five"
+                android:layout_marginStart="@dimen/five"
+                android:text="Miles"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ten_sp" />
+
+            <TextView
+                android:id="@+id/realnewKiss_txt_notify1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/five"
+                android:layout_marginStart="@dimen/five"
+                android:text="&amp;"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ten_sp" />
+
+            <TextView
+                android:id="@+id/tracking_hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/five"
+                android:layout_marginStart="@dimen/five"
+                android:textColor="@color/button_bg"
+                android:textSize="@dimen/fifteen_sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/five"
+                android:layout_marginStart="@dimen/five"
+                android:text="Hours"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ten_sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/map_newkiss_header2"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:layout_gravity="start|top"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/realnewKiss_txt_notifyreach1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/five"
+                android:layout_marginStart="@dimen/five"
+                android:textColor="@color/button_bg"
+                android:textSize="@dimen/fifteen_sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/five"
+                android:layout_marginStart="@dimen/five"
+                android:text="Until delivery"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ten" />
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

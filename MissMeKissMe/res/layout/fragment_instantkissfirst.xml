@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <RelativeLayout
+        android:id="@+id/real_newkiss_header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/black"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/instant_back_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:clickable="true"
+            android:contentDescription="@string/empty_string"
+            android:src="@drawable/back_icon" />
+
+        <TextView
+            android:id="@+id/newKiss_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/new_kisses"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/real_newkiss_header1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/real_newkiss_header"
+        android:background="@color/button_bg"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/realtime_iconss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/empty_string"
+            android:src="@drawable/instant_kiss_icon" />
+
+        <TextView
+            android:id="@+id/realnewKiss_txtss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/fifteen"
+            android:text="@string/instant_kiss"
+            android:textColor="@color/white"
+            android:textSize="@dimen/eighteen_sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/real_newkiss_header2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/real_newkiss_header1"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/realnewKiss_txt_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/ten_sp"
+            android:text="@string/realtimenew_kisses_select"
+            android:textColor="@color/black"
+            android:textSize="@dimen/eighteen_sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/real_newkiss_header3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/real_newkiss_header4"
+        android:layout_below="@+id/real_newkiss_header2"
+        android:background="@color/white" >
+
+        <ListView
+            android:id="@+id/instantkiss_contact_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10.0sp"
+            android:listSelector="#9ac7be"
+            android:scrollbars="none" >
+        </ListView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/real_newkiss_instance_header4"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/llNextInstantFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/realnewKiss_txt_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="@string/next"
+                android:textColor="@color/button_bg"
+                android:textSize="@dimen/fifteen_sp" />
+
+            <ImageView
+                android:id="@+id/instant_next_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:contentDescription="@string/empty_string"
+                android:src="@drawable/next_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llsendbtninstant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/send_btn_instant"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:background="@drawable/dialog_button"
+                android:text="Send"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/realtime_instance_process_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/empty_string"
+            android:src="@drawable/process_slide"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

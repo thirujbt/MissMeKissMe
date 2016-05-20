@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/newkiss_bg" >
+
+    <RelativeLayout
+        android:id="@+id/newkiss_header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/black"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:clickable="true"
+            android:contentDescription="@string/empty_string"
+            android:src="@drawable/back_icon" />
+
+        <TextView
+            android:id="@+id/newKiss_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/new_kisses"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    
+    
+    <LinearLayout
+        android:id="@+id/newkiss_header_below"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newkiss_header"
+        android:background="@color/semi_black"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <!--
+             <TextView
+            android:id="@+id/newKiss_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/new_kisses"
+            android:textColor="@color/button_bg"
+            android:textSize="@dimen/eighteen_sp" />
+        -->
+
+        <TextView
+            android:id="@+id/newKiss_title_txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:text="@string/select_kiss"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twenty_sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newkiss_header_below"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/newkiss_header_below1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/realtime_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:contentDescription="@string/empty_string"
+                android:padding="5dp"
+                android:src="@drawable/realtime_icon" />
+
+            <ImageView
+                android:id="@+id/instant_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:contentDescription="@string/empty_string"
+                android:padding="5dp"
+                android:src="@drawable/instant_icon" />
+
+            <ImageView
+                android:id="@+id/delayed_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:contentDescription="@string/empty_string"
+                android:padding="5dp"
+                android:src="@drawable/delayed_icon" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

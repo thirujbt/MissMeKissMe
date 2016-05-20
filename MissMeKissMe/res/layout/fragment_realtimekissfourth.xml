@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/real_newkiss_header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/black"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/realtimefourth_back_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:clickable="true"
+            android:contentDescription="@string/empty_string"
+            android:src="@drawable/back_icon" />
+
+        <TextView
+            android:id="@+id/newKiss_txtfourth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/new_kisses"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/real_newkiss_header1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/real_newkiss_header"
+        android:background="@color/button_bg"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/realtime_icon4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/empty_string" />
+
+        <TextView
+            android:id="@+id/realnewKiss_txtfourth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/fifteen"
+            android:text="@string/realtimenew_kisses"
+            android:textColor="@color/white"
+            android:textSize="@dimen/eighteen_sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/real_newkiss_header2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/real_newkiss_header1"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/realnewKiss_txt_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/ten_sp"
+            android:text="@string/kiss_msg"
+            android:textColor="@color/black"
+            android:textSize="@dimen/eighteen_sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/real_newkiss_header3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/real_newkiss_header4"
+        android:layout_below="@+id/real_newkiss_header2"
+        android:background="@color/white" >
+
+        <EditText
+            android:id="@+id/realedit_txt"
+            android:layout_width="280dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/message_bg"
+            android:gravity="top"
+            android:inputType="text"
+            android:paddingLeft="5dp" />
+
+        <Button
+            android:id="@+id/alert_clearall_btn"
+            android:layout_width="110dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/realedit_txt"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dialog_button"
+            android:padding="5dp"
+            android:text="@string/clear"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/alert_ok_btn"
+            android:layout_width="110dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/realedit_txt"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dialog_button"
+            android:text="@string/ok"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/real_newkiss_header4"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:id="@+id/llNextFourth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/realnewKiss_txt_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="@string/next"
+                android:textColor="@color/button_bg"
+                android:textSize="@dimen/fifteen_sp" />
+
+            <ImageView
+                android:id="@+id/realtimefourth_next_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:contentDescription="@string/empty_string"
+                android:src="@drawable/next_icon" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/realtime_process_iconfourth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/empty_string" />
+    </RelativeLayout>
+
+</RelativeLayout>

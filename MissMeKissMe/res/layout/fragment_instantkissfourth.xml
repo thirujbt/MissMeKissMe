@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/real_newkiss_header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/black"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/instantfourth_back_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:clickable="true"
+            android:contentDescription="@string/empty_string"
+            android:src="@drawable/back_icon" />
+
+        <TextView
+            android:id="@+id/newKiss_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/new_kisses"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/real_newkiss_header1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/real_newkiss_header"
+        android:background="@color/button_bg"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/realtime_iconss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/empty_string"
+            android:src="@drawable/instant_kiss_icon" />
+
+        <TextView
+            android:id="@+id/realnewKiss_txtsss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/fifteen"
+            android:text="@string/instant_kiss"
+            android:textColor="@color/white"
+            android:textSize="@dimen/eighteen_sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/real_newkiss_header2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/real_newkiss_header1"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/realnewKiss_txt_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/ten_sp"
+            android:text="@string/done"
+            android:textColor="@color/black"
+            android:textSize="@dimen/eighteen_sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/real_newkiss_header3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/real_newkiss_header4"
+        android:layout_below="@+id/real_newkiss_header2"
+        android:scrollbars="none"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/realnewKiss_txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ten_sp"
+                android:padding="5dp"
+                android:text="TO:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteen_sp" />
+
+            <TextView
+                android:id="@+id/instance_name_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ten_sp"
+                android:padding="5dp"
+                android:textSize="@dimen/fifteen_sp" />
+
+            <TextView
+                android:id="@+id/realnewKiss_txt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ten_sp"
+                android:padding="5dp"
+                android:text="Kiss Attachment:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteen_sp" />
+
+            <TextView
+                android:id="@+id/instance_attach_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ten_sp"
+                android:padding="5dp"
+                android:textSize="@dimen/fifteen_sp" />
+
+            <TextView
+                android:id="@+id/realnewKiss_txt7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ten_sp"
+                android:padding="5dp"
+                android:text="Kiss Message:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteen_sp" />
+
+            <TextView
+                android:id="@+id/instance_msg_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ten_sp"
+                android:padding="5dp"
+                android:textSize="@dimen/fifteen_sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/real_newkiss_header4"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:padding="5dp" >
+
+        <Button
+            android:id="@+id/instantkiss_send"
+            android:layout_width="110dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/fifteen"
+            android:layout_marginRight="@dimen/fifteen"
+            android:layout_marginTop="@dimen/five"
+            android:background="@drawable/kiss_send"
+            android:text="Send a kiss"
+            android:textColor="@color/white" />
+
+        <!-- <ImageView
+            android:id="@+id/realtime_process_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/empty_string"
+            android:src="@drawable/process_slide2" /> -->
+    </RelativeLayout>
+
+</RelativeLayout>

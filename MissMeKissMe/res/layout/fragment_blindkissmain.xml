@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/blind_newkiss_header"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/black"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/blind_back_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:clickable="true"
+            android:contentDescription="@string/empty_string"
+            android:src="@drawable/back_icon" />
+
+        <TextView
+            android:id="@+id/newKiss_txt_blind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/blind_kiss"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/blind_newkiss_header1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/blind_newkiss_header"
+        android:background="@color/button_bg"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <EditText
+            android:id="@+id/blind_kiss_searchbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_textbox"
+            android:hint="Search Places"
+            android:imeOptions="actionSearch"
+            android:padding="10dp"
+            android:cursorVisible="false"
+            android:singleLine="true"
+            android:textColor="#b2b2b2"
+            android:textColorHint="#b2b2b2" />
+
+        <ImageView
+            android:id="@+id/blind_kiss_searchimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@string/empty_string"
+            android:src="@drawable/search_icon" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/blind_newkiss_header1" >
+
+        <RelativeLayout
+            android:id="@+id/relative_ploter_blind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/plotter" >
+
+            <ImageView
+                android:id="@+id/ploter_user_image_blind"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="@dimen/two"
+                android:contentDescription="@string/empty_string" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_ploter_own_blind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue" >
+
+            <ImageView
+                android:id="@+id/ploter_user_imag_own_blind"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="@dimen/two"
+                android:contentDescription="@string/empty_string" />
+        </RelativeLayout>
+
+        <fragment
+            android:id="@+id/map_blinkiss_page"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</RelativeLayout>

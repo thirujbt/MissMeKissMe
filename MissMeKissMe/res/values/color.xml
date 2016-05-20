@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000000</color>
+    <color name="semi_black">#90000000</color>
+    <color name="semi_black_login">#80000000</color>
+    <color name="semi_black_home">#95000000</color>
+    <color name="button_bg">#187F6A</color>
+    <color name="red">#8E1212</color>
+    <color name="white">#ffffff</color>
+    <color name="semi_white">#80ffffff</color>
+    <color name="header_color">#24c1d5</color>
+    <color name="light_ash_color">#aaaaaa</color>
+    <color name="blue">#0000ff</color>
+    <color name="dialog_bg">#DEDEDE</color>
+    <color name="list_selector">#9ac7be</color>
+
+    <color name="focused">#9ac7be</color>
+    <color name="selected">#9ac7be</color>
+
+</resources>

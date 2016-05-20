@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <ImageView
+        android:id="@+id/vault_grid_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="4dp"
+        android:contentDescription="@string/empty_string"
+        android:src="@drawable/default_image" />
+
+    <TextView
+        android:id="@+id/vault_grid_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/fifteen"
+        android:layout_marginStart="@dimen/fifteen"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@+id/vault_grid_image"
+        android:layout_toRightOf="@+id/vault_grid_image"
+        android:text="Name"
+        android:textColor="@color/button_bg" />
+
+    <TextView
+        android:id="@+id/vault_grid_txtname_attached"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vault_grid_txt"
+        android:layout_marginLeft="@dimen/thirteen_sp"
+        android:layout_marginStart="@dimen/thirteen_sp"
+        android:layout_toEndOf="@+id/vault_grid_image"
+        android:layout_toRightOf="@+id/vault_grid_image"
+        android:text="Name" />
+
+    <ImageView
+        android:id="@+id/vault_grid_delete_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vault_grid_image"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/empty_string"
+        android:src="@drawable/receive_delete_icon" />
+
+    <TextView
+        android:id="@+id/vault_grid_txtdelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/vault_grid_delete_image"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/vault_grid_delete_image"
+        android:layout_toRightOf="@+id/vault_grid_delete_image"
+        android:text="Delete"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/vault_read_unread_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="65dp"
+        android:contentDescription="@string/empty_string" />
+
+</RelativeLayout>
